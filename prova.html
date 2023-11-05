@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- Add your JavaScript and other head content here -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #33197C;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 32px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 24px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-button a {
+    background-color: #fff;
+    color: #33197C;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 8px 24px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button a:hover {
+    background-color: #33197C;
+    color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.contenitoreEsterno {
+    margin: 8.48%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    text-align: center;
+}
+
+.contenitoreInterno1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenitoreInterno2 img {
+    width: 100%;
+    display: block;
+}
+
+h1 {
+    font-size: 48.83px;
+    color: #212427;
+}
+
+.subT {
+    color: #636467;
+    font-size: 25px;
+    margin-top: -16px;
+    font: medium;
+}
+@media only screen and (min-width: 961px) {
+    .processContenitor {
+        display: flex;
+        justify-content: space-between; /* Align items horizontally */
+    }
+
+    .processInternalFrame {
+        width: 30%; /* Adjust width as needed */
+    }
+
+
+    .watchMyProjects {
+        justify-content: space-between; /* Align items horizontally */
+    }
+
+    .illustration {
+        width: 40%; /* Adjust width as needed */
+    }
+}
+/* Add your other styles here for responsiveness */
+/* For example, add media queries to adjust styles for different screen sizes */
+@media only screen and (max-width: 768px) {
+    .contenitoreEsterno {
+        margin: 5%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenitoreInterno1 {
+        margin-top: 20px;
+    }
+
+    .contenitoreInterno2 img {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .subT {
+        font-size: 20px;
+    }
+
+    .nav-list {
+        display: none; /* Hide the navigation links by default */
+        flex-direction: column; /* Stack the links vertically */
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #33197C;
+    }
+
+    .nav-list.active {
+        display: flex; /* Show the navigation links when the menu is active */
+    }
+
+    .nav-list li {
+        margin: 16px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Show the menu toggle button */
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 4px 0;
+    }
+
+    .contact-button {
+        margin-top: 24px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About me</a></li>
+            <li class="contact-button"><a href="#">Contact me</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Your content here -->
+    
+    <div class="contenitoreEsterno">
+        <div class="contenitoreInterno1">
+            <h1>Hi, I'm Rosh</h1>
+            <p class="subT">A Junior UX/UI Designer</p>
+            <button>My projects</button>
+        </div>
+        <div class="contenitoreInterno2">
+            <img src="Images/rosh.jpg" alt="Rosh's Image">
+        </div>
+    </div>
+    <div class="processContenitor">
+        <div class="processInternalFrame">
+            <div class="discoveryImg">
+                <img src="Images/discoveryImg.png" alt="Discovery Image">
+            </div>
+            <div class="discoveryText">
+                <h2>Discovery</h2>
+                <p class="subProcess">Studio e analisi competitor, analisi comparativa e customer journeys</p>
+            </div>
+        </div>
+        <div class="processInternalFrame">
+            <div class="ideateImg">
+                <img src="Images/ideateImg.png" alt="Ideate Image">
+            </div>
+            <div class="discoveryText">
+                <h2>Ideate</h2>
+                <p class="subProcess">Progettazione di wireframe e flusso utente</p>
+            </div>
+        </div>
+        <div class="processInternalFrame">
+            <div class="prototypeImg">
+                <img src="Images/prototypeImg.png" alt="Prototype Image">
+            </div>
+            <div class="discoveryText">
+                <h2>Prototype</h2>
+                <p class="subProcess">Creazione di un prototipo interattivo mediante l’uso di tool appropriati</p>
+            </div>
+        </div>
+    </div>
+    <div class="watchMyProjects">
+        <div class="illustration">
+            <img src="Images/watchProjects.png" alt="Watch My Projects Illustration">
+        </div>
+        <div>
+            <h1 class="white">Watch My Projects</h1>
+            <button class="whiteButton port">Portfolio</button>
+        </div>
+    </div>
+    <div class="contactMe">
+        <div class="contacts">
+            <h1 class="h1Contact">Contact me</h1>
+            <div class="icone">
+                <div class="email">
+                        <img class="emailImg" src="Images/email.svg" alt="Email Icon">
+                        <p class="emailText">arambawala.roshan@gmail.com</p>
+                </div>
+                <div class="email">
+                    <img class="emailImg" src="Images/phone.svg" alt="Phone Icon">
+                    <p class="emailText">+39 351 850 9056</p>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/roshflosh" target="_blank"><img src="Images/instagram.png" alt="Instagram Icon"></a>
+                    <a href="https://www.behance.net/roshanarambaw" target="_blank"><img src="Images/behance.png" alt="Behance Icon"></a>
+                    <a href="https://it.linkedin.com/in/roshan-arambawala-4a149b191" target="_blank"><img src="Images/linkedin.png" alt="LinkedIn Icon"></a>
+                </div>
+                <button>Download CV</button>
+            </div>
+        </div>
+        <div>
+            <form id="contact-form">
+                <input id="user_name" name="user_name" class="input1" value="Your Name" onfocus="if (this value=='Your Name') this.value='';" onblur="this.value = this.value==''?'Your Name':this.value;" size="80">
+                <input id="user_email" name="user_email" class="input1" value="Your Email" onfocus="if (this value=='Your Email') this.value='';" onblur="this.value = this.value==''?'Your Email':this.value;" size="80">
+                <input id="message" name="message" class="input2" value="Your Message" onfocus="if (this value=='Your Message') this.value='';" onblur="this.value = this.value==''?'Your Message':this.value;" size="80">
+                <button class="submit" type="submit" onclick="sendMail()">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
