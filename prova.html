@@ -93,6 +93,96 @@ h1 {
     margin-top: -16px;
     font: medium;
 }
+
+.white {
+    color: #fff;
+}
+
+.myProjects{
+    font-size: 20px;
+    background-color: #33197C;
+    color: #fff;
+    border-color: #33197C;
+    padding: 8px 24px;
+    border-radius: 9px;
+    height: 44px;
+}
+
+.whiteButton{
+    font-size: 20px;
+    background-color: #FFF;
+    color: #33197C;
+    border-color: #FFF;
+    padding: 8px 24px;
+    border-radius: 9px;
+    height: 44px;
+}
+
+
+.contactMe {
+    text-align: center;
+}
+
+.contacts {
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contact-text {
+    font-size: 18px;
+    color: #636467;
+}
+
+.download-cv {
+    font-size: 20px;
+    background-color: #33197C;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+#contact-form {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    font-size: 20px;
+    background-color: #33197C;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
 @media only screen and (min-width: 961px) {
     .processContenitor {
         display: flex;
@@ -105,6 +195,7 @@ h1 {
 
 
     .watchMyProjects {
+        background-color: #33197C;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -177,6 +268,10 @@ h1 {
         width: 80%; /* Adjust the width as needed */
     }
 
+    .watchMyProjects{
+        background-color: #33197C;
+    }
+
     #contact-form {
                 max-width: 80%; /* Adjust the maximum width as needed */
             }
@@ -211,7 +306,7 @@ h1 {
         <div class="contenitoreInterno1">
             <h1>Hi, I'm Rosh</h1>
             <p class="subT">A Junior UX/UI Designer</p>
-            <button>My projects</button>
+            <button class="myProjects" >My projects</button>
         </div>
         <div class="contenitoreInterno2">
             <img src="Images/rosh.jpg" alt="Rosh's Image">
@@ -255,7 +350,7 @@ h1 {
             <button class="whiteButton port">Portfolio</button>
         </div>
     </div>
-    <div class="contactMe">
+    <!--<div class="contactMe">
         <div class="contacts">
             <h1 class="h1Contact">Contact me</h1>
             <div class="icone">
@@ -281,6 +376,41 @@ h1 {
                 <input id="user_email" name="user_email" class="input1" value="Your Email" onfocus="if (this value=='Your Email') this.value='';" onblur="this.value = this.value==''?'Your Email':this.value;" size="80">
                 <input id="message" name="message" class="input2" value="Your Message" onfocus="if (this value=='Your Message') this.value='';" onblur="this.value = this.value==''?'Your Message':this.value;" size="80">
                 <button class="submit" type="submit" onclick="sendMail()">Submit</button>
+            </form>
+        </div>
+    </div>-->
+    <div class="contactMe">
+        <div class="contacts">
+            <h1 class="h1Contact">Contact me</h1>
+            <div class="icone">
+                <div class="contact-item">
+                    <img class="contact-icon" src="Images/email.svg" alt="Email Icon">
+                    <p class="contact-text">Email: arambawala.roshan@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <img class="contact-icon" src="Images/phone.svg" alt="Phone Icon">
+                    <p class="contact-text">Phone: +39 351 850 9056</p>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.instagram.com/roshflosh" target="_blank">
+                        <img class="contact-icon" src="Images/instagram.png" alt="Instagram Icon">
+                    </a>
+                    <a href="https://www.behance.net/roshanarambaw" target="_blank">
+                        <img class="contact-icon" src="Images/behance.png" alt="Behance Icon">
+                    </a>
+                    <a href="https://it.linkedin.com/in/roshan-arambawala-4a149b191" target="_blank">
+                        <img class="contact-icon" src="Images/linkedin.png" alt="LinkedIn Icon">
+                    </a>
+                </div>
+                <button class="download-cv">Download CV</button>
+            </div>
+        </div>
+        <div>
+            <form id="contact-form">
+                <input id="user_name" name="user_name" class="input" type="text" placeholder="Your Name">
+                <input id="user_email" name="user_email" class="input" type="email" placeholder="Your Email">
+                <textarea id="message" name="message" class="input" placeholder="Your Message"></textarea>
+                <button class="submit-button" type="submit">Submit</button>
             </form>
         </div>
     </div>
