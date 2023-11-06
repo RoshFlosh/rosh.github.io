@@ -18,9 +18,9 @@
         </div>
         <ul class="nav-list">
             <li><a href="Index.html">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="https://www.behance.net/roshanarambaw">Portfolio</a></li>
             <li><a href="AboutMe.html">About me</a></li>
-            <li class="contact-button"><a href="#">Contact me</a></li>
+            <li class="contact-button"><a href="https://www.linkedin.com/in/roshan-arambawala/">Contact me</a></li>
         </ul>
     </nav>
     
@@ -28,7 +28,7 @@
         <div class="contenitoreInterno1">
             <h1>Hi, I'm Rosh</h1>
             <p class="subT">A Junior UX/UI Designer</p>
-            <button class="myProjects" >My projects</button>
+            <a href="https://www.behance.net/roshanarambaw"><button class="myProjects" >My projects</button></a>
         </div>
         <div class="contenitoreInterno2">
             <img src="Images/rosh.jpg" alt="Rosh's Image">
@@ -67,9 +67,9 @@
         <div class="illustration">
             <img src="Images/watchProjects.png" alt="Watch My Projects Illustration">
         </div>
-        <div>
+        <div class="portfolio">
             <h1 class="white">Watch My Projects</h1>
-            <button class="whiteButton port">Portfolio</button>
+            <a href="https://www.behance.net/roshanarambaw"><button class="whiteButton port">Portfolio</button></a>
         </div>
     </div>
     <div class="contactMe">
@@ -95,7 +95,7 @@
                         <img class="contact-icon" src="Images/linkedin.png" alt="LinkedIn Icon">
                     </a>
                 </div>
-                <button class="download-cv">Download CV</button>
+                <a href="Curriculum.pdf" download><button class="download-cv">Download CV</button></a>
             </div>
         </div>
         <div>
@@ -116,16 +116,12 @@
         navList.classList.toggle("active");
     });
 
-    // When the user scrolls the page, execute myFunction
     window.onscroll = function() {myFunction()};
 
-    // Get the navbar
     var navbar = document.getElementById("navbar");
 
-    // Get the offset position of the navbar
     var sticky = navbar.offsetTop;
 
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function myFunction() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
