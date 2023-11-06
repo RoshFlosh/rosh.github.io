@@ -1,0 +1,295 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #33197C;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 32px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 24px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-button a {
+    background-color: #fff;
+    color: #33197C;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 8px 24px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button a:hover {
+    background-color: #33197C;
+    color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.contenitoreEsterno {
+    margin: 8.48%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    text-align: center;
+}
+
+.contenitoreInterno1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenitoreInterno2 img {
+    width: 100%;
+    display: block;
+}
+
+h1 {
+    font-size: 48.83px;
+    color: #212427;
+}
+
+.subT {
+    color: #636467;
+    font-size: 25px;
+    margin-top: -16px;
+    font: medium;
+}
+
+.white {
+    color: #fff;
+}
+
+.myProjects{
+    font-size: 20px;
+    background-color: #33197C;
+    color: #fff;
+    border-color: #33197C;
+    padding: 8px 24px;
+    border-radius: 9px;
+    height: 44px;
+}
+
+.whiteButton{
+    font-size: 20px;
+    background-color: #FFF;
+    color: #33197C;
+    border-color: #FFF;
+    padding: 8px 24px;
+    border-radius: 9px;
+    height: 44px;
+}
+
+
+.contactMe {
+    text-align: center;
+}
+
+.contacts {
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contact-text {
+    font-size: 18px;
+    color: #636467;
+}
+
+.download-cv {
+    font-size: 20px;
+    background-color: #33197C;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+#contact-form {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    font-size: 20px;
+    background-color: #33197C;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.processContenitor{
+    padding: 64px;
+}
+
+.h1AboutMe{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.pAboutMe{
+    text-align: center;
+}
+
+@media only screen and (min-width: 961px) {
+    .processContenitor {
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    .processInternalFrame {
+        width: 30%;
+    }
+
+
+    .watchMyProjects {
+        background-color: #33197C;
+        padding: 64px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .illustration {
+        width: 40%; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contenitoreEsterno {
+        margin: 5%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenitoreInterno1 {
+        margin-top: 20px;
+    }
+
+    .contenitoreInterno2 img {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .subT {
+        font-size: 20px;
+    }
+
+    .nav-list {
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #33197C;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 16px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 4px 0;
+    }
+
+    .contact-button {
+        margin-top: 24px;
+    }
+
+    .watchMyProjects .illustration img {
+        width: 80%;
+    }
+
+    .watchMyProjects{
+        background-color: #33197C;
+    }
+
+    #contact-form {
+        max-width: 80%;
+    }
+
+    .input1,
+    .input2,
+    .submit {
+        width: 80%; 
+    }
+}
