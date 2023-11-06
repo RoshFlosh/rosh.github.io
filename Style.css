@@ -33,6 +33,10 @@ body {
     font-weight: bold;
 }
 
+.button{
+    cursor: pointer;
+}
+
 .contact-button a {
     background-color: #fff;
     color: #33197C;
@@ -103,6 +107,18 @@ h1 {
     padding: 8px 24px;
     border-radius: 9px;
     height: 44px;
+}
+
+.watchMyProjects{
+    background-color: #33197C;
+}
+
+.illustration{
+    padding-left: 5%;
+}
+
+.portfolio{
+    padding-right: 5%;
 }
 
 .whiteButton{
@@ -281,6 +297,10 @@ textarea {
 
     .watchMyProjects{
         background-color: #33197C;
+    }
+
+    .portfolio{
+        padding-left: 5%;
     }
 
     #contact-form {
