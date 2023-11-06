@@ -17,9 +17,9 @@
             </div>
             <ul class="nav-list">
                 <li><a href="Index.html">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="https://www.behance.net/roshanarambaw">Portfolio</a></li>
                 <li><a href="AboutMe.html">About me</a></li>
-                <li class="contact-button"><a href="#">Contact me</a></li>
+                <li class="contact-button"><a href="https://www.linkedin.com/in/roshan-arambawala/">Contact me</a></li>
             </ul>
         </nav>
         <h1 class="h1AboutMe">About me</h1>
@@ -27,5 +27,29 @@
            After evaluating several options, my attention has been captured by<br> the Start2Impact platform, in particular by the UX/UI Design course.<br><br>
            I would describe myself as a particularly empathetic person, the idea<br> of ​​combining psychology, user research and graphics in some way<br> particularly appealed to me.
         </p>
+        
+            <img class="imgAboutMe" src="Images/rosh.jpg" alt="Rosh's Image">
     </body>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navList = document.querySelector(".nav-list");
+    
+        menuToggle.addEventListener("click", function () {
+            navList.classList.toggle("active");
+        });
+    
+        window.onscroll = function() {myFunction()};
+    
+        var navbar = document.getElementById("navbar");
+    
+        var sticky = navbar.offsetTop;
+    
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+        }
+    </script>
 </html>
