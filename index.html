@@ -1,268 +1,43 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <!--<script src="index.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init("3kBxsX7tiVRIF-ajY");
-        })();
-    </script>-->
-    <style>
-        /** {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }*/
-
-        @media only screen and (max-width: 400px) {
-            body {
-                background-color: #F09A9D; /* Red */
-            }
-            h1{
-                font-size: 20px;
-            }
-        }
-
-            /* Tablet Styles */
-            @media only screen and (min-width: 401px) and (max-width: 960px) {
-            body {
-                background-color: #F5CF8E; /* Yellow */
-            }
-            h1{
-                font-size: 31.25px;
-            }
-            .subT{ 
-                font-size: 25px;
-            }
-        }
-
-            /* Desktop Styles */
-            @media only screen and (min-width: 961px) {
-            body {
-                background-color: #B2D6FF; /* Blue */
-            }
-            h1{
-                font-size: 48.83px;
-                color: #212427;
-            }
-            .subT{
-                color: #636467;
-                font-size: 25px;
-                margin-top: -16px;
-                font: medium;
-                font-family: 'poppins';
-            }
-            }
-        body{
-            width: 100%;
-            height: 2982px;
-            align-items: center;
-            font-family: 'poppins';
-            margin: 0 auto;
-        }
-        /*h1{
-            font-size: 48.83px;
-            color: #212427;
-        }*/
-        h2{
-            font-size: 28px;
-            color: #212427;
-            margin-bottom: 0;
-            padding-top: 8px;
-        }
-        
-        button{
-            font-size: 20px;
-            background-color: #33197C;
-            color: #fff;
-            border-color: #33197C;
-            padding: 8px 24px;
-            border-radius: 9px;
-            height: 56px;
-        }
-        .whiteButton{
-            background-color: #FFF;
-            color: #212427;
-        }
-        .contenitoreEsterno{
-            margin-top: 8.48%;
-            margin-left: 20%;
-            margin-right: 18%;
-            display: inline-flex;
-            align-items: center;
-            gap: 165px;
-        }
-        .contenitoreInterno1{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .contenitoreInterno2{
-            display: flex;
-            width: 448px;
-            height: 448px;
-            background: grey;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        nav{
-            padding: 8px 32px;
-            justify-content: space-between;
-            display: flex;
-            align-items: center;
-            margin: 0 auto;
-        }
-        .contenitoreInternoMenu{
-            color: #212427;
-            float: right;
-            padding-top: 0;
-        }
-        .linkBar{
-            color: #212427;
-            padding-right: 64px;
-            text-decoration: none;
-        }
-        .processContenitor{
-            margin-right: 14%;
-            margin-left: 14%;
-            display: inline-flex;
-            height: 240px;
-            align-items: center;
-            gap: 16.8%;
-            width: 72%;
-            margin-top: 280px;
-        }
-        .processInternalFrame{
-            width: 22%;
-            height: 239px;
-        }
-        .subProcess{
-            font-size: 16px;
-            margin-top: 8px;
-        }
-        .discoveryText{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            color: #212427;
-        }
-        .watchMyProjects{
-            background-color: #33197C;
-            margin-top: 176px;
-            display: flex;
-            width: 100%;
-            padding: 128px 0%;
-            justify-content: center;
-            align-items: center;
-            gap: 4.01%;
-        }
-        .projectText{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 48px;
-        }
-        .white{
-            color: #fff;
-        }
-        .contactMe{
-            display: inline-flex;
-            align-items: flex-start;
-            gap: 176px;
-            margin-top: 176px;
-            width: 79%;
-            margin-right: 10.5%;
-            margin-left: 10.5%;
-        }
-        .contacts{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .email{
-            color: #212427;
-            display: flex;
-            align-items: flex-start;
-            gap: 13px;
-        }
-        .emailImg{
-            padding-top: 16px;
-        }
-        .icone{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0;
-        }
-        .social{
-            display: flex;
-            align-items: flex-start;
-            gap: 32px;
-            margin-top: 16px;
-            margin-bottom: 32px;
-        }
-        form{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 16px;
-            padding-top: 16px;
-        }
-        .h1Contact{
-            margin-top: 0;
-        }
-        input{
-            border-radius: 8px;
-            background: #E7E7E7;
-            color: #212427;
-            border-color: #E7E7E7;
-            padding-left: 16px;
-        }
-        .input1{
-            height:56px;
-        }
-        .input2{
-            height: 176px;
-            padding-bottom: 120px;
-        }
-        .submit{
-            margin-top: 16px;
-        }
-        .illustration img{
-            width: 100%;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Portfolio Rosh</title>
+    <link rel="icon" type="image/png" href="Images/logo.png">
 </head>
 <body>
-    <nav class="container">
-        <img >
-        <div class="contenitoreInternoMenu hamburger">
-            <a class="linkBar" href="">Home</a>
-            <a class="linkBar" href="">Portfolio</a>
-            <a class="linkBar" href="">About me</a>
-            <button>Contact me</button>
+    <nav class="navbar" id="navbar">
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
+        <ul class="nav-list">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="AboutMe.html">About me</a></li>
+            <li class="contact-button"><a href="#">Contact me</a></li>
+        </ul>
     </nav>
+    
     <div class="contenitoreEsterno">
         <div class="contenitoreInterno1">
-            <h1>Hi, i'm Rosh</h1>
+            <h1>Hi, I'm Rosh</h1>
             <p class="subT">A Junior UX/UI Designer</p>
-            <button>My projects</button>
+            <button class="myProjects" >My projects</button>
         </div>
         <div class="contenitoreInterno2">
-            
+            <img src="Images/rosh.jpg" alt="Rosh's Image">
         </div>
     </div>
     <div class="processContenitor">
         <div class="processInternalFrame">
             <div class="discoveryImg">
-                <img src="Images/discoveryImg.png">
+                <img src="Images/discoveryImg.png" alt="Discovery Image">
             </div>
             <div class="discoveryText">
                 <h2>Discovery</h2>
@@ -270,8 +45,8 @@
             </div>
         </div>
         <div class="processInternalFrame">
-            <div>
-                <img src="Images/ideateImg.png">
+            <div class="ideateImg">
+                <img src="Images/ideateImg.png" alt="Ideate Image">
             </div>
             <div class="discoveryText">
                 <h2>Ideate</h2>
@@ -279,8 +54,8 @@
             </div>
         </div>
         <div class="processInternalFrame">
-            <div>
-                <img src="Images/prototypeImg.png">
+            <div class="prototypeImg">
+                <img src="Images/prototypeImg.png" alt="Prototype Image">
             </div>
             <div class="discoveryText">
                 <h2>Prototype</h2>
@@ -290,10 +65,10 @@
     </div>
     <div class="watchMyProjects">
         <div class="illustration">
-            <img src="Images/watchProjects.png">
+            <img src="Images/watchProjects.png" alt="Watch My Projects Illustration">
         </div>
         <div>
-            <h1 class="white">Watch<br> My Projects</h1>
+            <h1 class="white">Watch My Projects</h1>
             <button class="whiteButton port">Portfolio</button>
         </div>
     </div>
@@ -301,30 +76,62 @@
         <div class="contacts">
             <h1 class="h1Contact">Contact me</h1>
             <div class="icone">
-                <div class="email">
-                        <img class="emailImg" src="Images/email.svg">
-                        <p class="emailText">arambawala.roshan@gmail.com</p>
+                <div class="contact-item">
+                    <img class="contact-icon" src="Images/email.svg" alt="Email Icon">
+                    <p class="contact-text">Email: arambawala.roshan@gmail.com</p>
                 </div>
-                <div class="email">
-                    <img class="emailImg" src="Images/phone.svg">
-                    <p class="emailText">+39 351 850 9056</p>
+                <div class="contact-item">
+                    <img class="contact-icon" src="Images/phone.svg" alt="Phone Icon">
+                    <p class="contact-text">Phone: +39 351 850 9056</p>
                 </div>
-                <div class="social">
-                    <a href="https://www.instagram.com/roshflosh" target="_blank"><img src="Images/instagram.png"></a>
-                    <a href="https://www.behance.net/roshanarambaw" target="_blank"><img src="Images/behance.png"></a>
-                    <a href="https://it.linkedin.com/in/roshan-arambawala-4a149b191" target="_blank"><img src="Images/linkedin.png"></a>
+                <div class="contact-item">
+                    <a href="https://www.instagram.com/roshflosh" target="_blank">
+                        <img class="contact-icon" src="Images/instagram.png" alt="Instagram Icon">
+                    </a>
+                    <a href="https://www.behance.net/roshanarambaw" target="_blank">
+                        <img class="contact-icon" src="Images/behance.png" alt="Behance Icon">
+                    </a>
+                    <a href="https://it.linkedin.com/in/roshan-arambawala-4a149b191" target="_blank">
+                        <img class="contact-icon" src="Images/linkedin.png" alt="LinkedIn Icon">
+                    </a>
                 </div>
-                <button>Download CV</button>
+                <button class="download-cv">Download CV</button>
             </div>
         </div>
         <div>
             <form id="contact-form">
-                <input id="user_name" name="user_name" class="input1" value="Your Name" onfocus="if (this.value=='Your Name') this.value='';" onblur="this.value = this.value==''?'Your Name':this.value;" size="80">
-                <input id="user_email" name="user_email" class="input1" value="Your Email" onfocus="if (this.value=='Your Email') this.value='';" onblur="this.value = this.value==''?'Your Email':this.value;" size="80">
-                <input id="message" name="message" class="input2" value="Your Message" onfocus="if (this.value=='Your Message') this.value='';" onblur="this.value = this.value==''?'Your Message':this.value;" size="80">
-                <button class="submit" type="submit" onclick="sendMail()">Submit</button>
+                <input id="user_name" name="user_name" class="input" type="text" placeholder="Your Name">
+                <input id="user_email" name="user_email" class="input" type="email" placeholder="Your Email">
+                <textarea id="message" name="message" class="input" placeholder="Your Message"></textarea>
+                <button class="submit-button" type="submit">Submit</button>
             </form>
         </div>
     </div>
 </body>
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navList = document.querySelector(".nav-list");
+
+    menuToggle.addEventListener("click", function () {
+        navList.classList.toggle("active");
+    });
+
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+    }
+</script>
 </html>
