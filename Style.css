@@ -203,11 +203,18 @@ textarea {
 
 .h1AboutMe{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .pAboutMe{
     text-align: center;
+}
+
+.imgAboutMe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
 }
 
 @media only screen and (min-width: 961px) {
@@ -301,6 +308,10 @@ textarea {
 
     .portfolio{
         padding-left: 5%;
+    }
+
+    .imgAboutMe{
+        width: 70%
     }
 
     #contact-form {
